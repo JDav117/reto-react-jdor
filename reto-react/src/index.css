@@ -48,17 +48,16 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: url('/assets/images/bg-cafe-lg.jpg') center/cover no-repeat fixed;
 }
 
-/* Contenedor principal con recuadro elegante */
+/* Contenedor principal flotando sobre la imagen */
 .content-wrapper {
-  border: 3px solid var(--accent-orange);
   border-radius: 24px;
   margin: var(--spacing-xl);
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(255, 140, 66, 0.25);
-  background: #1a1a1a;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  background: #1e1e1e;
 }
 
 /* ============================================================================
@@ -66,13 +65,11 @@ body {
    ============================================================================ */
 
 .hero {
-  background: linear-gradient(135deg, rgba(111, 78, 55, 0.85) 0%, rgba(93, 64, 55, 0.85) 100%),
-              url('/assets/images/bg-cafe-lg.jpg') center/cover no-repeat;
+  background: transparent;
   color: var(--white);
   padding: var(--spacing-xl);
   text-align: center;
   position: relative;
-  border-bottom: 2px solid var(--accent-orange);
 }
 
 .hero-subtitle {
@@ -82,17 +79,6 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: var(--spacing-sm);
-}
-
-/* Vector decorativo */
-.hero-vector {
-  max-width: 200px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: var(--spacing-md) auto;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) invert(100%) brightness(1.1);
-  opacity: 0.9;
 }
 
 .hero-title {
@@ -258,6 +244,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   z-index: 10;
+}
+
+/* Disponibilidad — texto en el footer */
+.sold-out-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #e53935;
+  letter-spacing: 0.03em;
+}
+
+.available-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #7ec87e;
+  letter-spacing: 0.03em;
 }
 
 /* Card Body */
@@ -522,7 +523,7 @@ body {
    ============================================================================ */
 
 .footer {
-  background: var(--primary-brown);
+  background: var(--primary-blue);
   color: var(--white);
   text-align: center;
   padding: var(--spacing-lg);
@@ -553,12 +554,10 @@ body {
 
   .hero {
     padding: var(--spacing-lg);
-    background: linear-gradient(135deg, rgba(111, 78, 55, 0.85) 0%, rgba(93, 64, 55, 0.85) 100%),
-                url('/assets/images/bg-cafe.jpg') center/cover no-repeat;
   }
 
-  .hero-vector {
-    max-width: 150px;
+  .app {
+    background-image: url('/assets/images/bg-cafe.jpg');
   }
 
   .hero-title {
@@ -578,18 +577,14 @@ body {
   .content-wrapper {
     margin: var(--spacing-md);
     border-radius: 14px;
-    border-width: 2px;
   }
 
   .hero {
     padding: var(--spacing-lg) var(--spacing-md);
-    background: linear-gradient(135deg, rgba(111, 78, 55, 0.85) 0%, rgba(93, 64, 55, 0.85) 100%),
-                url('/assets/images/bg-cafe-sm.jpg') center/cover no-repeat;
-    border-bottom-width: 2px;
   }
 
-  .hero-vector {
-    max-width: 120px;
+  .app {
+    background-image: url('/assets/images/bg-cafe-sm.jpg');
   }
 
   .hero-title {

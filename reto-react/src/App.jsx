@@ -46,7 +46,6 @@ export default function App() {
         {/* Hero */}
         <header className="hero">
           <p className="hero-subtitle">☕ Nuestra Selección</p>
-          <img src="/assets/icons/vector.svg" alt="decorative line" className="hero-vector" />
           <h1 className="hero-title">
             Nuestro Menú de <em>Cafés</em>
           </h1>
@@ -89,7 +88,7 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Jhoan David Ortega - DevChallenges.io
+            Jhoan David Ortega - JDav117
           </a>
         </p>
       </footer>

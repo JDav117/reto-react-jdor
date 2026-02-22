@@ -7,19 +7,19 @@ export default function Card({ coffee }) {
       <div className="card-image-wrapper">
         <img src={image} alt={name} className="card-image" />
 
-        {/* Tag "Popular" — renderado condicionalmente */}
+        {/* Tag "Popular" */}
         {popular && <span className="tag-popular">Popular</span>}
       </div>
 
       {/* Cuerpo de la tarjeta */}
       <div className="card-body">
-        {/* Header: nombre y disponibilidad */}
+        {/* Header: nombre y precio */}
         <div className="card-header">
           <h3 className="card-title">{name}</h3>
           <span className="card-price">{price}</span>
         </div>
 
-        {/* Footer: rating y votos (o estado "Sin votos" si no hay) */}
+        {/* Footer: rating + sold out condicionalmente */}
         <div className="card-footer">
           {rating !== null ? (
             <div className="card-rating">
@@ -29,13 +29,14 @@ export default function Card({ coffee }) {
             </div>
           ) : (
             <div className="card-rating no-votes">
-              <span className="no-rating">Sin calificación</span>
+              <img src="/assets/icons/Star.svg" alt="no rating" className="star-icon star-empty" />
+              <span className="no-rating">Sin calificaciones</span>
             </div>
           )}
 
-          {/* Estado de disponibilidad — renderado condicionalmente */}
-          <span className={`card-availability ${available ? 'available' : 'unavailable'}`}>
-            {available ? '● Disponible' : '● Agotado'}
+          {/* Disponibilidad */}
+          <span className={available ? 'available-text' : 'sold-out-text'}>
+            {available ? 'Disponible' : 'No disponible'}
           </span>
         </div>
       </div>
