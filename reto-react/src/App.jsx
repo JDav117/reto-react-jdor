@@ -45,7 +45,7 @@ export default function App() {
       <div className="content-wrapper">
         {/* Hero */}
         <header className="hero">
-          <p className="hero-subtitle">☕ Nuestra Selección</p>
+          <p className="hero-subtitle">🍵 Nuestra Selección</p>
           <h1 className="hero-title">
             Nuestro Menú de <em>Cafés</em>
           </h1>
