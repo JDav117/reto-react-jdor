@@ -5,48 +5,22 @@ Reto: [Simple Coffee Listing — devChallenges](https://devchallenges.io/challen
 
 ## Integrantes
 
-- *(Nombre integrante 1)*
+- Jhoan David Ortega Ramos
 
 ## Instrucciones para ejecutar
 
-- npm install
-- npm run dev
+- npm install (para instalar dependencias).
+- npm run dev (Correr en terminal y posterior visualizacion en navegador).
 
 Abre http://localhost:5173 en el navegador.
 
-## Estructura del proyecto
-
-reto-react/
-├── public/
-│   ├── favicon.ico
-│   └── assets/
-│       ├── icons/
-│       │   ├── Star.svg
-│       │   └── Star_fill.svg
-│       └── images/
-│           ├── bg-cafe.jpg
-│           ├── bg-cafe-lg.jpg
-│           └── bg-cafe-sm.jpg
-├── src/
-│   ├── components/
-│   │   ├── Card.jsx
-│   │   ├── FilterBar.jsx
-│   │   ├── List.jsx
-│   │   └── SkeletonCard.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
-
 ## Capturas de pantalla
 
-- Desktop
+### Desktop
 ![alt text](<Screenshot/Screenshot resultado Desktop.png>)
 
-- Movil
+### Movil
 ![alt text](<Screenshot/Screenshot resultado Movil.png>)
 
-- Tablet
+### Tablet
 ![alt text](<Screenshot/Screenshot resultado Tablet.png>)
