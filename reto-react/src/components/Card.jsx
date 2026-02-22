@@ -29,12 +29,14 @@ export default function Card({ coffee }) {
             </div>
           ) : (
             <div className="card-rating no-votes">
-              <span className="no-votes-text">No hay votos</span>
+              <span className="no-rating">Sin calificación</span>
             </div>
           )}
 
           {/* Estado de disponibilidad — renderado condicionalmente */}
-          {!available && <span className="unavailable-badge">Vendido</span>}
+          <span className={`card-availability ${available ? 'available' : 'unavailable'}`}>
+            {available ? '● Disponible' : '● Agotado'}
+          </span>
         </div>
       </div>
     </div>
