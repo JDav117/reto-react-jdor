@@ -23,7 +23,7 @@ export default function Card({ coffee }) {
         <div className="card-footer">
           {rating !== null ? (
             <div className="card-rating">
-              <span className="star">★</span>
+              <img src="/assets/icons/Star_fill.svg" alt="rating" className="star-icon" />
               <span className="rating-value">{rating}</span>
               <span className="votes-count">({votes})</span>
             </div>
